@@ -1,0 +1,24 @@
+{
+  "name": "assignment3",
+  "version": "1.0.0",
+  "description": "assignment 3 of course CS648 Full-Stack Web Development",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel src --presets react --out-dir public",
+    "watch": "babel src --presets react --out-dir public --watch",
+    "start": "nodemon -w server server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.25.3",
+    "express": "^4.17.3",
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/preset-react": "^7.16.7",
+    "nodemon": "^2.0.15"
+  }
+}
